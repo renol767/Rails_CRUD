@@ -5,20 +5,50 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+- Ruby version
 
-* System dependencies
 
-* Configuration
+- System dependencies
 
-* Database creation
+- Configuration
 
-* Database initialization
+- Database creation
 
-* How to run the test suite
+- Database initialization
 
-* Services (job queues, cache servers, search engines, etc.)
+- How to run the test suite
 
-* Deployment instructions
+- Services (job queues, cache servers, search engines, etc.)
 
-* ...
+- Deployment instructions
+
+- ...
+
+<h2>Login Page</h2>
+<br>
+<img src="ss/LoginPage.png">
+<br>
+<h2>Register Page</h2>
+<br>
+<img src="ss/RegisterPage.png">
+<br>
+<h2>List Data Page</h2>
+<br>
+<img src="ss/ListDataPage.png">
+<br>
+<h2>Add Data Page</h2>
+<br>
+<img src="ss/AddDataPage.png">
+<br>
+<h2>Edit Data Page</h2>
+<br>
+<img src="ss/EditDataPage.png">
+<br>
+<h2>Delete Data Page</h2>
+<br>
+<img src="ss/DeleteDataPage.png">
+<br>
+<h2>Alert</h2>
+<br>
+<img src="ss/AlertPage.png">
+<br>
