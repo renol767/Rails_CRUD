@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container" style="margin-top: 100px">
+      <div class="row" style="display: flex;">
+      <div class="col">
+        <h1>Login Page</h1><br/>
+        <% if notice %>
+        <div class="alert alert-<% if alert %><%= alert %><% end %>" role="alert">
+            <%= notice %>
+        </div>
+        <% end %>
+        <br><br>
+        <%= form_tag controller: :user, action: :auth, local: true do %>
+          <div class="mb-3">
+            <label class="form-label" for="exampleInputEmail1">Username</label>
+            <div class="mr-10"></div>
+            <%= text_field_tag :email, '', placeholder: 'Username', :class => 'form-control' %>
+          </div><br/>
+          <div class="mb-3">
+            <label class="form-label" for="exampleInputPassword1">Password</label>
+            <div class="mr-10"></div>
+            <%= password_field_tag :password, '', placeholder: 'Password', :class => 'form-control' %>
+          </div><br/>
+          <br/>
+          <%= submit_tag 'Login', :class => 'btn btn-primary btn-block' %>
+        <% end %>
+        <br>
+        <%= link_to 'Register', user_register_path, :class => "btn btn-outline-primary btn-block"%>
+        </div>
+        <div class="col" style="margin-top: 100px">
+        <%= image_tag ("ruby.png"), class: "img-responsive", style: 'height: 200px; margin-left: 120px', align: 'center'%> 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
